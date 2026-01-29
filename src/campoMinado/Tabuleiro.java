@@ -52,13 +52,13 @@ public class Tabuleiro {
                 System.out.print("Coluna: "); 
                 coluna = entrada.nextInt();
                 
-                if( (tabuleiro[linha][coluna] != '_') && ((linha < 9 && linha > 0) && (coluna < 9 && coluna > 0)))
+                if( (tabuleiro[linha][coluna] != '□') && ((linha < 9 && linha > 0) && (coluna < 9 && coluna > 0)))
                     System.out.println("Esse campo já está sendo exibido");
                 
                 if( linha < 1 || linha > 8 || coluna < 1 || coluna > 8)
                     System.out.println("Escolha números de 1 até 8");
                 
-            }while((linha < 1 && linha > 8) && (coluna < 1 && coluna > 8) || (tabuleiro[linha][coluna] != '_') );
+            }while(tabuleiro[linha][coluna] != '□');
             
             if(getPosicao(linha, coluna)== -1)
                 return true;
@@ -110,7 +110,7 @@ public class Tabuleiro {
     public void iniciaTabuleiro(){
         for(int i=1 ; i<minas.length ; i++)
             for(int j=1 ; j<minas.length ; j++)
-                tabuleiro[i][j]= '_';
+                tabuleiro[i][j]= '□';
     }
     
     public void iniciaMinas(){
@@ -123,7 +123,6 @@ public class Tabuleiro {
         boolean sorteado;
         int linha, coluna;
         for(int i=0 ; i<10 ; i++){
-            
             do{
                 linha = random.nextInt(8) + 1;
                 coluna = random.nextInt(8) + 1;
