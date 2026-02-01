@@ -165,24 +165,24 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 <table>
   <tr>
     <td align="center">
-      <a href="#" title="defina o título do link">
-        <img src="https://avatars.githubusercontent.com/u/190748345?v=4" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+      <a href="https://github.com/brendomatias" title="link para o github de Brendon">
+        <img src="https://avatars.githubusercontent.com/u/190748345?v=4" width="100px;" alt="Foto do Brendon Sobral no GitHub"/><br>
         <sub>
           <b>Brendon Sobral</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="#" title="defina o título do link">
-        <img src="https://avatars.githubusercontent.com/u/165310081?v=4" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+      <a href="https://github.com/GustavoBC2024" title="link para o github de Gustavo">
+        <img src="https://avatars.githubusercontent.com/u/165310081?v=4" width="100px;" alt="Foto do Gustavo Benjamin no GitHub"/><br>
         <sub>
           <b>Gustavo Benjamin</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="#" title="defina o título do link">
-        <img src="https://avatars.githubusercontent.com/u/78249846?v=4" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+      <a href="https://github.com/thadeu-alves" title="link para o github de Thadeu">
+        <img src="https://avatars.githubusercontent.com/u/78249846?v=4" width="100px;" alt="Foto do Thadeu Alves no GitHub"/><br>
         <sub>
           <b>Thadeu Alves</b>
         </sub>
