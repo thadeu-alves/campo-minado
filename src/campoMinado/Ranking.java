@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Ranking implements IRanking {
-    private final String FILE_PATH = "./ranking.txt";
+    private final String FILE_PATH = new java.io.File("..").getAbsolutePath() + "/data/ranking.txt";
     private File file;
     private Map<String, Integer> people;
 
@@ -16,12 +16,14 @@ public class Ranking implements IRanking {
     @Override
     public void printRanking() {
         getScores();
-        for(Map.Entry<String, Integer> person : people.entrySet()){
-            String name = person.getKey();
-            int score = person.getValue();
-
-            System.out.println("Nome: " + name + " | " + score + " pontos");
-        }
+        people.entrySet().stream()
+                .sorted(Map.Entry.comparingByValue())
+                .forEach(person -> {
+                    System.out.println(
+                            person.getKey() +
+                                    " ganhou em " + person.getValue() + " rodadas"
+                    );
+                });
     }
 
     @Override
